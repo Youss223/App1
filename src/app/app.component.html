@@ -6,6 +6,26 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li><a routerLink="/first-component" routerLinkActive="active">First Component</a></li>
+    <li><a routerLink="/second-component" routerLinkActive="active">Second Component</a></li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
+
+
+
+
+
+
+
+
 <h1>
   KING
 </h1>
@@ -14,9 +34,8 @@
 <i class="far fa-angry" style="color:red">youss</i>
 
 <div class="alert alert-info">
-  King est de retour   <i class="fa fa-address-book" aria-hidden="true"> Yes</i>
+  King est de retour   <i class="fa fa-address-book" aria-hidden="true">Yes</i>
 </div> 
 
- 
-<i class="fa-solid fa-user"></i>
-
+<app-first></app-first>
+<app-first></app-first>
